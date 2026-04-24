@@ -19,6 +19,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
     <ZeroData
       primaryText={primaryText}
       secondaryText={secondaryText}
+      imageAltText="No pending approvals"
       actionText="Refresh"
       actionType={ZeroDataActionType.ctaButton}
       onActionClick={onRefresh}
