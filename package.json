@@ -17,7 +17,7 @@
     "azure-devops-extension-api": "^4.258.0",
     "azure-devops-extension-sdk": "^4.0.2",
     "azure-devops-ui": "^2.260.0",
-    "react": "^16.14.0",
+    "react": "^19.2.5",
     "react-dom": "^16.14.0",
     "recharts": "^2.15.3"
   },
