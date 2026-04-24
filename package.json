@@ -19,7 +19,7 @@
     "azure-devops-ui": "^2.260.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "recharts": "^2.15.3"
+    "recharts": "^3.8.1"
   },
   "devDependencies": {
     "@types/react": "^19.1.10",
