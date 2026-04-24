@@ -13,7 +13,7 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^7.3.1",
-    "@mui/material": "^5.15.0",
+    "@mui/material": "^9.0.0",
     "azure-devops-extension-api": "^4.258.0",
     "azure-devops-extension-sdk": "^4.0.2",
     "azure-devops-ui": "^2.260.0",
