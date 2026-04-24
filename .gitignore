@@ -1,0 +1,56 @@
+# Node modules and package lock
+node_modules/
+package-lock.json
+
+# Build output
+scripts/
+dist/
+
+# Test PS files
+*.ps1
+
+# Test scripts
+testscripts/
+
+# VS Code settings
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Extension packages
+*.vsix
+
+# Env files
+.env
+.env.*
+
+# Icons
+icons/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.log
+
+# Ignore coverage and test output
+coverage/
+
+# Playwright MCP
+
+.playwright-mcp/
+
+# Ignore IDE files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

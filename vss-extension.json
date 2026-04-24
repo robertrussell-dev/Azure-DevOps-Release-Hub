@@ -1,0 +1,67 @@
+{
+  "manifestVersion": 1,
+  "id": "release-hub",
+  "version": "2.0.47",
+  "name": "Release Hub",
+  "description": "Comprehensive Azure DevOps hub for managing pending approvals with advanced filtering, stage visualization, and modern React architecture.",
+  "publisher": "release-hub",
+  "categories": ["Azure Pipelines"],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "icons": {
+    "default": "images/icon.png"
+  },
+  "contributions": [
+    {
+      "id": "ReleaseHub.Hub",
+      "type": "ms.vss-web.hub",
+      "description": "Adds a 'Release Hub' under the Pipelines section.",
+      "targets": [
+        "ms.vss-build-web.build-release-hub-group"
+      ],
+      "properties": {
+        "name": "Release Hub",
+        "order": 99,
+        "uri": "index.html",
+        "icon": {
+          "light": "images/hubiconlight.png",
+          "dark": "images/hubicondark.png"
+        }
+      }
+    }
+  ],
+  "scopes": [
+    "vso.build",
+    "vso.build_execute",
+    "vso.code",
+    "vso.release",
+    "vso.release_manage",
+    "vso.work_write",
+    "vso.extension.data_write"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "addressable": true
+    },
+    {
+      "path": "dist/app.js",
+      "addressable": true
+    },
+    {
+      "path": "images/icon.png",
+      "addressable": true
+    },
+    {
+      "path": "images/hubiconlight.png",
+      "addressable": true
+    },
+    {
+      "path": "images/hubicondark.png",
+      "addressable": true
+    }
+  ]
+}
