@@ -15,7 +15,19 @@ A comprehensive Azure DevOps extension for managing pending approvals across bot
 - **Azure DevOps Theme Support** - Automatic light/dark theme matching
 - **Release Flow Tracking** - Track changes across release branches with merge-base detection
 
-## Getting Started
+## Install
+
+Install directly from the Visual Studio Marketplace:
+
+[**Get Release Hub on the Marketplace**](https://marketplace.visualstudio.com/items?itemName=RobertRussell.release-hub&targetId=13bb0e48-71a7-43f3-9fa0-92f0c182db06)
+
+1. Click **Get it free** on the Marketplace page.
+2. Select the Azure DevOps organization to install into.
+3. Open **Pipelines > Release Hub** in your organization.
+
+No build step required for end users.
+
+## Build from Source (Contributors)
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -26,22 +38,19 @@ A comprehensive Azure DevOps extension for managing pending approvals across bot
 
 ```bash
 git clone https://github.com/robertrussell-dev/Azure-DevOps-Release-Hub.git
-cd release-hub
+cd Azure-DevOps-Release-Hub
 npm install
 npm run build
 ```
 
-### Package and Install
+### Package
 
 ```bash
 # Create VSIX package
 tfx extension create --manifest-globs vss-extension.json
-
-# Upload the .vsix to https://marketplace.visualstudio.com/manage
-# Then install in your Azure DevOps organization
 ```
 
-Before publishing, update the `publisher` field in `vss-extension.json` to your own [Marketplace publisher ID](https://learn.microsoft.com/en-us/azure/devops/extend/publish/overview).
+To publish your own fork, update the `publisher` field in `vss-extension.json` to your own [Marketplace publisher ID](https://learn.microsoft.com/en-us/azure/devops/extend/publish/overview), then upload the `.vsix` at https://marketplace.visualstudio.com/manage.
 
 ## Project Structure
 
